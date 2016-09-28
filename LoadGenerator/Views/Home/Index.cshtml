@@ -10,6 +10,37 @@
 
 <div class="row">
     <div class="col-md-4">
+        <h2>Generate load on 1 core on server</h2>
+        <form action="/Home/Load" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Load percentage
+                    </td>
+                    <td>
+                        @{
+                            @Html.TextBox("load")
+                        }
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        Runtime in seconds
+                    </td>
+                    <td>
+                        @{
+                            @Html.TextBox("runtime")
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Save" />
+                    </td>
+                </tr>
+            </table>
+        </form>
         <h2>Getting started</h2>
         <p>
             ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
